@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Form</title>
+    <script>
+        function abc(){
+            alert("Hello");
+        }
+    </script>
+
 </head>
 <body>
-    <h1>Employee name</h1>
+    <h1 onclick="abc()">Employee name</h1>
+    <form action="YoYo">
+        Name : <input type ="text" id="t1"><br><br>
+        Address : <textarea rows="4" cols="60"></textarea><br><br>
+        City : <select id="t3">
+            <option>Mydukur</option>
+            <option>Kadapa</option>
+            <option>Hyderabad</option>
+            <option>Mumbai</option>
+            <option>Chennai</option>
+            <option>Delhi</option>
+            <option>Kolkata</option>
+                </select><br><br>
+        Gender : <input type="radio" id="t4" name="gender" value="male">Male<input type="radio" id="t5" name="gender" value="female">Female<br>
+    </form>
     <p>Helloo!! As you have reached till here please take time to fill this form</p>
     <h2>Hobbies</h2>
     <ol>
