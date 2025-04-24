@@ -9,19 +9,17 @@
             alert("Hello");
         }
         function show() {
-            // Retrieve form values
+            
             var name = document.getElementById("t1").value;
             var address = document.querySelector("textarea").value;
             var city = document.getElementById("t3").value;
             var gender = document.querySelector('input[name="t4"]:checked')?.value || "Not selected";
             
-            // Retrieve selected vehicles
             var vehicles = [];
             document.querySelectorAll('input[name="t5"]:checked').forEach(vehicle => {
                 vehicles.push(vehicle.nextSibling.textContent.trim());
             });
 
-            // Display data in span
             var output = `
                 <strong>Name:</strong> ${name} <br>
                 <strong>Address:</strong> ${address} <br>
